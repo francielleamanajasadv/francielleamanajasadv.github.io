@@ -40,7 +40,6 @@
 			}
 
 			.content {
-			  padding: 0 18px;
 			  max-height: 0;
 			  overflow: hidden;
 			  transition: max-height 0.2s ease-out;
@@ -407,7 +406,54 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 				    } 
 				  });
 				}
+				
+								var coll = document.getElementsByClassName("collapsible");
+				var i;
+
+				for (i = 0; i < coll.length; i++) {
+				  coll[i].addEventListener("click", function() {
+				    this.classList.toggle("active");
+				    var content = document.getElementById("work2");
+				    if (content.style.maxHeight){
+				      content.style.maxHeight = null;
+				    } else {
+				      content.style.maxHeight = content.scrollHeight + "px";
+				    } 
+				  });
+				}
+				
+								var coll = document.getElementsByClassName("collapsible");
+				var i;
+
+				for (i = 0; i < coll.length; i++) {
+				  coll[i].addEventListener("click", function() {
+				    this.classList.toggle("active");
+				    var content = document.getElementById("work3");
+				    if (content.style.maxHeight){
+				      content.style.maxHeight = null;
+				    } else {
+				      content.style.maxHeight = content.scrollHeight + "px";
+				    } 
+				  });
+				}
+				
+								var coll = document.getElementsByClassName("collapsible");
+				var i;
+
+				for (i = 0; i < coll.length; i++) {
+				  coll[i].addEventListener("click", function() {
+				    this.classList.toggle("active");
+				    var content = document.getElementById("work4");
+				    if (content.style.maxHeight){
+				      content.style.maxHeight = null;
+				    } else {
+				      content.style.maxHeight = content.scrollHeight + "px";
+				    } 
+				  });
+				}
 			</script>
+		
+		
 
 	</body>
 </html>
