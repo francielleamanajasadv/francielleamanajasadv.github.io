@@ -20,11 +20,11 @@
   cursor: pointer;
   font-weight: normal;
   padding: 10px;
-  background: #b0100c;
+/*  background: #b0100c;*/
 }
 .accordion label:hover,
 .accordion label:focus {
-  background: #252525;
+/*  background: #252525;*/
 }
 .accordion .handle label:before {
   content: "\f107";
