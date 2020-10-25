@@ -27,7 +27,7 @@
   background: #252525;
 }
 .accordion .handle label:before {
-  font-family: "FontAwesome 5 Free";
+  font-family: "FontAwesome";
   content: "\f107";
   display: inline-block;
   margin-right: 10px;
