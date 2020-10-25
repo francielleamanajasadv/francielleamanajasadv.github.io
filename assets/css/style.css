@@ -8,18 +8,24 @@
 }
 
 .accordion .content {
+  background: #fff;
   overflow: hidden;
   height: 0;
   transition: 0.5s;
- 
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .accordion label {
+  color: #fff;
   cursor: pointer;
   font-weight: normal;
-  
+  padding: 10px;
+  background: #b0100c;
 }
-
+.accordion label:hover,
+.accordion label:focus {
+  background: #252525;
+}
 .accordion .handle label:before {
   font-family: FontAwesome;
   content: "\f107";
@@ -29,9 +35,7 @@
   line-height: 1.556em;
   vertical-align: middle;
   transition: 0.4s;
-  
 }
-
 .accordion > input[name="collapse"]:checked ~ .handle label:before {
     transform: rotate(180deg);
     transform-origin: center;
