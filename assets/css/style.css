@@ -8,7 +8,7 @@
 }
 
 .accordion .content {
-  background: #fff;
+/*  background: #fff;*/
   overflow: hidden;
   height: 0;
   transition: 0.5s;
