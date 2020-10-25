@@ -4,72 +4,24 @@
 
 .accordion > input[name="collapse"] {
   display: none;
+ 
 }
-
-.accordion label,
-.accordion .content{
- max-width: 620px;
-  margin: 0 auto;
- }
-
 
 .accordion .content {
   overflow: hidden;
   height: 0;
   transition: 0.5s;
-  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3);
-}
-
-.accordion > input[name="collapse"]:checked ~ .content {
-  height: 380px;
-  transition: height 0.5s;
-}
-
-.accordion label {
-  display: block;
  
-}
-
-
-/* For Desktop */
-@media only screen and (min-width: 620px){
-
-
-.accordion > input[name="collapse"]:checked ~ .content {
-  height: 220px;
-}
-
-}
-
-
-.accordion {
-  margin-bottom: 1em;
-}
-
-.accordion > input[name="collapse"]:checked ~ .content {
-  border-top: 0;
-  transition: 0.3s;
-}
-
-.accordion .handle {
-  margin: 0;
-  font-size: 16px;
-  
 }
 
 .accordion label {
   cursor: pointer;
   font-weight: normal;
-  user-select: none;
   
 }
 
-.accordion label:hover,
-.accordion label:focus {
-}
-
 .accordion .handle label:before {
-  font-family: "Font Awesome 5 Free";
+  font-family: FontAwesome;
   content: "\f107";
   display: inline-block;
   margin-right: 10px;
@@ -86,16 +38,7 @@
     transition: 0.4s;
 }
 
-
-/*
- Demo purposes only
-*/
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-}
-
-.accordion p:last-child {
-  margin-bottom: 0;
+.accordion > input[name="collapse"]:checked ~ .content {
+  height: 380px;
+  transition: height 0.5s;
 }
