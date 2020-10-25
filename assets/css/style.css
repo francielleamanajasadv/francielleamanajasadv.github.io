@@ -27,15 +27,12 @@
 /*  background: #252525;*/
 }
 .accordion .handle label:before {
-  content: "\f107";
-  font-family: "Font Awesome 5 Pro";
-  content: "\f107";
-  font-weight: 900;
+  font-family: "Font Awesome 5 Free";
+  content: "\f00c";
   display: inline-block;
-  margin-right: 10px;
-  font-size: 1em;
-  line-height: 1.556em;
+  padding-right: 3px;
   vertical-align: middle;
+  font-weight: 900;
   transition: 0.4s;
 }
 .accordion > input[name="collapse"]:checked ~ .handle label:before {
