@@ -94,7 +94,7 @@
 								
 								<section>
 									<h3 class="major"><span class="collapsible">Direito de Família e Sucessões.</span>
-									<div class="content andrey"><p>TEU CU</p></div></h3>
+									<div class="content"><p>TEU CU</p></div></h3>
 								</section>
 								
 								<section>
@@ -425,7 +425,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 				for (i = 0; i < coll.length; i++) {
 				  coll[i].addEventListener("click", function() {
 				    this.classList.toggle("active");
-				    var content = document.getElementsByClassName("andrey");
+				    var content = this.nextElementSibling;
 				    if (content.style.maxHeight){
 				      content.style.maxHeight = null;
 				    } else {
