@@ -28,7 +28,7 @@
 }
 .accordion .handle label:before {
   content: "\f107";
-  font-family: "Font Awesome 5 Regular";
+  font-family: "Font Awesome 5 Pro";
   content: "\f107";
   font-weight: 900;
   display: inline-block;
