@@ -12,23 +12,41 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<style>
-a:link {
- border-bottom-color: transparent;
-}
+			a:link {
+			 border-bottom-color: transparent;
+			}
 
-a:visited {
-  border-bottom-color: transparent;
-}
+			a:visited {
+			  border-bottom-color: transparent;
+			}
 
-a:hover {
-  border-bottom-color: transparent;
-	
-}
+			a:hover {
+			  border-bottom-color: transparent;
 
-a:active {
-  border-bottom-color: transparent;
-}
-</style>
+			}
+
+			a:active {
+			  border-bottom-color: transparent;
+			}
+		</style>
+		
+		<style>
+			.collapsible {
+			  cursor: pointer;
+			  width: 100%;
+			  border: none;
+			  text-align: left;
+			  outline: none;
+			}
+
+			.content {
+			  padding: 0 18px;
+			  max-height: 0;
+			  overflow: hidden;
+			  transition: max-height 0.2s ease-out;
+			}
+		</style>
+		
 	</head>
 	<body class="is-preload">
 
@@ -75,7 +93,8 @@ a:active {
 								<span class="image main"><img src="images/pic02.jpg" alt="" /></span>
 								
 								<section>
-									<h3 class="major"><a href="#work1" style="text-decoration: none !important;">Família e Sucessões.</a></h3>
+									<h3 class="major"><span class="collapsible">Direito de Família e Sucessões.</span></h3>
+									<span class="image main content"><img src="images/pic02.jpg" alt="" /></span>
 								</section>
 								
 								<section>
@@ -92,7 +111,7 @@ a:active {
 							</article>
 						
 							<article id="work1">
-								<h2 class="major">Direito De Família e Sucessões.</h2>
+								<h2 class="major">Família e Sucessões.</h2>
 								<span class="image main"><img src="images/pic02.jpg" alt="" /></span>
 								
 								
@@ -398,6 +417,23 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			
+			<script>
+				var coll = document.getElementsByClassName("collapsible");
+				var i;
+
+				for (i = 0; i < coll.length; i++) {
+				  coll[i].addEventListener("click", function() {
+				    this.classList.toggle("active");
+				    var content = this.nextElementSibling;
+				    if (content.style.maxHeight){
+				      content.style.maxHeight = null;
+				    } else {
+				      content.style.maxHeight = content.scrollHeight + "px";
+				    } 
+				  });
+				}
+			</script>
 
 	</body>
 </html>
