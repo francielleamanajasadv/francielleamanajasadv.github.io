@@ -58,22 +58,18 @@
 }
 
 .accordion label {
-  color: #fff;
   cursor: pointer;
   font-weight: normal;
-  padding: 10px;
-  background: #b0100c;
   user-select: none;
   
 }
 
 .accordion label:hover,
 .accordion label:focus {
-  background: #252525;
 }
 
 .accordion .handle label:before {
-  font-family: FontAwesome;
+  font-family: "Font Awesome 5 Free";
   content: "\f107";
   display: inline-block;
   margin-right: 10px;
