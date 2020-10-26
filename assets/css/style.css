@@ -3,8 +3,7 @@
 */
 
 .accordion > input[name="collapse"] {
-  display: none;
- 
+  display: none; 
 }
 
 .accordion .content {
@@ -22,10 +21,12 @@
 /*  padding: 10px;*/
 /*  background: #b0100c;*/
 }
+
 .accordion label:hover,
 .accordion label:focus {
   background: #252525;
 }
+
 .accordion .handle label:before {
   font-family: "Font Awesome 5 Free";
   content: "\f107";
@@ -36,6 +37,7 @@
   font-weight: 900;
   transition: 0.4s;
 }
+
 .accordion > input[name="collapse"]:checked ~ .handle label:before {
     transform: rotate(180deg);
     transform-origin: center;
