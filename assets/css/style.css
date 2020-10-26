@@ -43,6 +43,6 @@
 }
 
 .accordion > input[name="collapse"]:checked ~ .content {
-  height: 336px;
+  height: 300px;
   transition: height 0.5s;
 }
