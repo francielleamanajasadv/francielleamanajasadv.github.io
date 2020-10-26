@@ -22,10 +22,10 @@
 /*  padding: 10px;*/
 /*  background: #b0100c;*/
 }
-.accordion label:hover,
+/*.accordion label:hover,
 .accordion label:focus {
-/*  background: #252525;*/
-}
+  background: #252525;
+}*/
 .accordion .handle label:before {
   font-family: "Font Awesome 5 Free";
   content: "\f107";
@@ -43,6 +43,6 @@
 }
 
 .accordion > input[name="collapse"]:checked ~ .content {
-  height: 190px;
+  height: 380px;
   transition: height 0.5s;
 }
