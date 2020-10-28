@@ -24,7 +24,12 @@
 
 .accordion label:hover,
 .accordion label:focus {
-  background: #252525;
+  background-color: rgba(255, 255, 255, 0.075);
+}
+
+.accordion label:hover,
+.accordion label:active {
+  background-color: rgba(255, 255, 255, 0.175);
 }
 
 .accordion .handle label:before {
